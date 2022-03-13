@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container{
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px #000000;
+    border-radius: 8px;
+    background-color: rgba(31, 30, 30, 0.048);
+    margin-bottom: 20px;
+
+}
+
+.form-group{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid rgba(128, 128, 128, 0.199);
+    margin-top: 5px;
+}
+
+
+
+.submitButton{
+    width: 30%;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 8px;
+    font-weight: 700!important;
+    color: #333;
+    text-shadow: none;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: .3s ease background-color;
+}
+
+.submitButton:hover{
+    background-color: rgb(119, 117, 117);
+}
+
+#status{
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#status.success{
+    background-color: rgb(211, 250, 153);
+    color: #333;
+    animation: status 4s ease forwards;
+}
+
+#status.error{
+    background-color: rgb(250, 129, 92);
+    color: #333;
+    animation: status 4s ease forwards;
+}
+
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.nav-masthead .nav-link {
+    padding: 0.25rem 0;
+    font-weight: 700;
+    color: rgba(255, 255, 255, .5);
+    background-color: transparent;
+    border-bottom: 0.25rem solid transparent;
+}
+
+.nav-masthead .nav-link + .nav-link {
+    margin-left: 1rem;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #0d6efd;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.nav-masthead .active {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+.cover-container {
+    max-width: 65em;
+    height: 100%;
+  }
+
+  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+body {
+    text-shadow: 0 0.05rem 0.1rem rgb(0 0 0 / 50%);
+    box-shadow: inset 0 0 5rem rgb(0 0 0 / 50%);
+    height: 100%;
+}
